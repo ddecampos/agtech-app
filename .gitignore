@@ -1,1 +1,6 @@
 venv/
+
+# Terraform files
+.terraform/
+*.tfstate
+*.tfstate.*

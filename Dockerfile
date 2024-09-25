@@ -12,7 +12,7 @@ COPY app.py app.py
 RUN pip install -r requirements.txt
 
 # Exponemos el puerto en el que Flask correrá
-EXPOSE 5000
+EXPOSE 5001
 
 # Ejecutamos la aplicación
 CMD ["python", "app.py"]

@@ -5,7 +5,7 @@ import os
 app = Flask(__name__)
 
 # API Key de OpenWeatherMap
-API_KEY = "WEATHER_API_KEY"
+API_KEY = os.getenv("WEATHER_API_KEY")
 
 # Función para obtener los datos meteorológicos de la ubicación
 def get_real_weather_data(lat, lon):
@@ -40,7 +40,7 @@ def real_weather():
 # Ruta principal
 @app.route('/')
 def index():
-    return "AgTech Monitoring System - Para datos meteorológicos, pasa latitud y longitud en /real_weather"
+    return "Weather Monitoring System - Para datos meteorológicos, pasa latitud y longitud en /real_weather"
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=5000)
+    app.run(host='0.0.0.0', port=5001)
