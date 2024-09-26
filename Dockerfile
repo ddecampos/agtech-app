@@ -1,6 +1,12 @@
 # Imagen base de Python
 FROM python:3.9-slim
 
+# Añadir los argumentos de compilación
+ARG WEATHER_API_KEY
+
+# Establecer la variable de entorno
+ENV WEATHER_API_KEY=${WEATHER_API_KEY}
+
 # Establece el directorio de trabajo en /app
 WORKDIR /app
 
