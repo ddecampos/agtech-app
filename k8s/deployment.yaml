@@ -14,9 +14,6 @@ spec:
     spec:
       containers:
       - name: weather-app
-        image: weather-app:latest
+        image: 314146298842.dkr.ecr.us-east-2.amazonaws.com/weather-app:latest
         ports:
         - containerPort: 5001
-        env:
-        - name: WEATHER_API_KEY
-          value: "{{WEATHER_API_KEY}}"

@@ -40,7 +40,7 @@ def real_weather():
 # Ruta principal
 @app.route('/')
 def index():
-    return "Weather Monitoring System - Para datos meteorológicos, pasa latitud y longitud en /real_weather"
+    return "WeatherApp - Para datos meteorológicos, pasa latitud y longitud en /real_weather"
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5001)
