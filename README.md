@@ -19,7 +19,7 @@ Output:
 ```
 
 
-El repositorio está diseñado para desplegar la aplicación en un cluster de EKS. Con el siguiente enlace se puede acceder al resultado final: [¡Demo!](http://a9f04f4eee504478f882489fad628ac9-149365821.us-east-2.elb.amazonaws.com)
+El repositorio está diseñado para desplegar la aplicación en un cluster de EKS.
 
 ## Infraestructura de la aplicación
 ### Ejecutar el pipeline de CI/CD
